@@ -1,0 +1,31 @@
+# Structuri-de-date
+Laborator nr5
+
+Problema 1
+
+Să se elaboreze un program ce va aloca dinamic un tablou unidimensional de numere întregi și va implementa următoarele funcții, funcțiile vor fi organizate sub forma unui meniu: 
+
+1. Inițializarea tabloului cu numere aleatorii; 
+
+2. Afișarea tabloului; 
+
+3. Eliberarea memoriei tabloului; 
+
+4. Sortarea tabloului utilizînd una din metode ( selection sort, insertion sort, bubble sort ), se va afișa în cît timp a fost executată sortarea; 
+
+5. Sortarea tabloului utilizînd una din metode ( merge sort, quick sort, heap sort ), se va afișa în cît timp a fost executată sortarea. 
+
+
+Problema 2
+
+Să se elaboreze un program ce va aloca dinamic un tablou unidimensional de numere întregi și va implementa următoarele funcții, funcțiile vor fi organizate sub forma unui meniu: 
+
+1. Inițializarea tabloului cu numere aleatorii; 
+
+2. Afișarea tabloului; 
+
+3. Eliberarea memoriei tabloului; 
+
+4. Căutarea unui număr din tablou utilizînd metoda de căutare linear search, se va afișa în cît timp se execută căutarea. 
+
+5. Căutarea unui număr din tablou utilizînd metoda de căutare binary search, se va afișa în cît timp se execută căutarea.  

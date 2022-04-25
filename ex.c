@@ -21,7 +21,6 @@ int *create_array(int n)
   {
     array[i] = rand() % n + 1;
   }
-  // array=(int*)realloc(array, n*sizeof(int));
   return array;
 }
 
@@ -146,9 +145,8 @@ int main()
         {
           printf("Dati numarul de elemente:\n");
           scanf("%d",&n);
-          // ptr = malloc(n * sizeof(int));
           ptr = create_array(n);
-            // ptr = array;
+
 
         }
         switch (command)
@@ -167,7 +165,8 @@ int main()
             }
             case 3:
             {
-              free_array(&ptr[0]);
+              free(ptr);
+              ptr = NULL;
               break;
             }
             case 4:

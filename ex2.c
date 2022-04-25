@@ -22,7 +22,7 @@ int *create_array(int n)
   {
     array[i] = rand()% n + 1;
   }
-  array=(int*)realloc(array, n*sizeof(int));
+  // array=(int*)realloc(array, n*sizeof(int));
   return array;
 }
 

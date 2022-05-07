@@ -224,25 +224,30 @@ int main()
             }
             case 3:
             {
-              free_array(ptr);
+              free(ptr);
                 printf("\nMemoria a fost eliberata cu succes!\n");
+                ptr = NULL;
               break;
             }
             case 4:
             {
               int variable,res;
-              printf("Introduceti variabila cautata: \n");
-              scanf("%d",&variable);
-                clock_t start = clock();
-              res = linear_search(ptr, n, variable);
-              if(res == -1)
+              // printf("Introduceti variabila cautata: \n");
+              // scanf("%d",&variable);
+              clock_t start = clock();
+              for(i=0; i<10000; i++)
               {
-                printf("Elementul nu este prezent\n");
+                variable = rand()% n + 1;
+                res = linear_search(ptr, n, variable);
               }
-              else
-              {
-                printf("Elementul se afla pe pozitia: |%d|\n", res);
-              }
+              // if(res == -1)
+              // {
+              //   printf("Elementul nu este prezent\n");
+              // }
+              // else
+              // {
+              //   printf("Elementul se afla pe pozitia: |%d|\n", res);
+              // }
 
                 clock_t end = clock();
                 float time_t = (float)(end-start)/CLOCKS_PER_SEC;
@@ -252,19 +257,25 @@ int main()
             case 5:
             {
               int variable,res;
-              printf("Introduceti variabila cautata: \n");
-              scanf("%d",&variable);
+              // printf("Introduceti variabila cautata: \n");
+              // scanf("%d",&variable);
                 clock_t start = clock();
                 quick_sort(ptr, n);
-              res = binary_search(ptr, variable, 0, n  );
-              if(res != -1)
-              {
-                printf("Elementul se afla pe pozitia: |%d|\n", res+1);
-              }
-              else
-              {
-                printf("Elementul nu este prezent\n");
-              }
+
+                for(i=0; i<10000; i++)
+                {
+                  variable = rand()% n + 1;
+                  res = binary_search(ptr, variable, 0, n);
+                }
+
+              // if(res != -1)
+              // {
+              //   printf("Elementul se afla pe pozitia: |%d|\n", res+1);
+              // }
+              // else
+              // {
+              //   printf("Elementul nu este prezent\n");
+              // }
 
                 clock_t end = clock();
                 float time_t = (float)(end-start)/CLOCKS_PER_SEC;

@@ -30,7 +30,7 @@ void print_array(int *array, int n)
 {
   {
     for(int i=0; i<n; i++)
-      printf("arr[%d]: |%d|\n",i,*(array+i));
+      printf("arr[%d]: |%d|\n",i+1,*(array+i));
   }
 }
 
@@ -166,6 +166,7 @@ int main()
             case 3:
             {
               free(ptr);
+              printf("Memoria a fost eliberata cu succes!\n");
               ptr = NULL;
               break;
             }
